@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer","Graphic Designer"];
+  const toRotate = ["Software Developer", "Web Designer", "UI/UX Designer","Graphic Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>
+                  <p className="banner-txt">
                     Productive employee with proven track record of successful
                     project management and producing quality outcomes through
                     leadership and team motivation. Works with clients to

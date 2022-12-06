@@ -99,15 +99,35 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  /* color: red !important; */
+  color: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgb(139, 170, 54);
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav .nav-link.navbar-link::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover{
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+    opacity: 5;
+    color: #B8B8B8;
 }
 span.navbar-text {
     display: flex;
@@ -134,7 +154,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color:rgb(139, 170, 54);
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -169,11 +189,12 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color:rgb(139, 170, 54);
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  color: white;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -234,10 +255,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-img.jpg');
+  background-image: url('./assets/img/bannerbg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  
+
+  /* transparent */
 }
 .banner .tagline {
   font-weight: 700;
@@ -258,8 +282,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  color: #fff;
+  font-style: "bold";
+  font-size: 23px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
