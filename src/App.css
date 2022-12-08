@@ -342,11 +342,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
+    color: white;
+    font-size: 20px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    width:80%;
+    margin-left:10%;
 }
 .skill-slider {
   width: 80%;
