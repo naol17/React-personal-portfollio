@@ -75,14 +75,7 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p className="banner-txt">
-                    Productive employee with proven track record of successful
-                    project management and producing quality outcomes through
-                    leadership and team motivation. Works with clients to
-                    determine requirements and provide excellent service.
-                    Adaptable Programmer and Graphics designer with extensive
-                    experience providing first-class results. Meets job demands
-                    and deadlines through diligent work-ethic and dedication to
-                    quality.
+                  I am an analytical problem-solver and have a passion for creating well-structured, efficient code. I am a quick learner and am adept at understanding complex architectures. I am also a team player and am able to work collaboratively with developers to ensure projects are completed on time. 
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
