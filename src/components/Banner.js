@@ -77,9 +77,9 @@ export const Banner = () => {
                   <p className="banner-txt">
                   I am an analytical problem-solver and have a passion for creating well-structured, efficient code. I am a quick learner and am adept at understanding complex architectures. I am also a team player and am able to work collaboratively with developers to ensure projects are completed on time. 
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>

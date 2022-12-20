@@ -39,26 +39,7 @@ export const Projects = () => {
       description: "Web design and development for startup company to give course online developed by my team ",
       imgUrl: projImg2,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Ettrans Ethiopia   ",
-      description: "Ettrans is a mobile application made for transport and logistics to facilitate and connect communication between drivers and loaders those who needs cargo service has advantage for both brokers drivers and the owners make every thing easy as a click of button",
-      imgUrl: projImg4,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+   
   ];
 
   // ************************************************
