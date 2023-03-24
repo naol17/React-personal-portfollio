@@ -33,7 +33,7 @@ function Blog() {
   }, []);
 
   return (
-    <div id="blog" className="blog">
+    <section className="blog" id="blog">
       Blog
       {data &&
         data.length > 0 &&
@@ -43,7 +43,7 @@ function Blog() {
             <p>{item.author}</p>
           </>
         ))}
-    </div>
+    </section>
   );
 }
 
