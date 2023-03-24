@@ -11,7 +11,12 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Software Developer", "Web Designer", "UI/UX Designer","Graphic Designer"];
+  const toRotate = [
+    "Software Developer",
+    "Web Designer",
+    "UI/UX Designer",
+    "Graphic Designer",
+  ];
   const period = 2000;
 
   useEffect(() => {
@@ -65,7 +70,7 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Naol`}{" "}
+                    {`Hi! I'm Naol,`}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -75,7 +80,11 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p className="banner-txt">
-                  I am an analytical problem-solver and have a passion for creating well-structured, efficient code. I am a quick learner and am adept at understanding complex architectures. I am also a team player and am able to work collaboratively with developers to ensure projects are completed on time. 
+                    I am an analytical problem-solver and have a passion for
+                    creating well-structured, efficient code. I am a quick
+                    learner and am adept at understanding complex architectures.
+                    I am also a team player and am able to work collaboratively
+                    with developers to ensure projects are completed on time.
                   </p>
                   {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
